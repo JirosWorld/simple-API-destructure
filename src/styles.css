@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Manrope:wght@200;300;400&display=swap');
+
+body {
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    background-color: #191919;
+    color: white;
+}
+
+h1, h2 {
+    font-family: 'Major Mono Display', monospace;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+#query-field, button {
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.result-box {
+    padding: 10px;
+    background-color: #191919;
+    border: 2px solid yellow;
+}
