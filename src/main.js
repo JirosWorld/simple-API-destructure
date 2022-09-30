@@ -14,13 +14,11 @@ function searchGame(e) {
     queryField.value = ""
 }
 
-const API_KEY = "b3d9eb8ea630431f8d9390ac80dc5205";
-
 // eerste parameter is vraagteken, tweede na ampersand: https://api.rawg.io/api/games?key=${API_KEY}&search=${name}
 
 async function fetchGameDetails(name) {
     try {
-        const result = await axios.get(`https://api.rawg.io/api/games?key=${API_KEY}&search=${name}`)
+        const result = await axios.get(`https://api.rawg.io/api/games?key=${process.env.API_KEY}&search=${name}`)
         const game=result.data.results[0];
         console.log(game);
         console.log(game.name);
